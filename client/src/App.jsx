@@ -1,10 +1,12 @@
 import { Button } from "./components/ui/button";
+import { Route, Routes } from "react-router-dom";
+import AuthPage from "./pages/auth/index.jsx";
 
 function App() {
   return (
-    <>
-      <Button className="bg-green-600">Check ShadCN</Button>
-    </>
+    <Routes>
+      <Route path="/auth" element={<AuthPage />} />
+    </Routes>
   );
 }
 
